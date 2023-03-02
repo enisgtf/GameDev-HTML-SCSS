@@ -1,0 +1,29 @@
+// Font Families : Poppins and Raleway
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+

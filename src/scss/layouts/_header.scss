@@ -1,0 +1,94 @@
+.header-container {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 42px;
+    width: 100%;
+    z-index: 1;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 48px;
+        }
+
+        nav {
+            transition: all ease 0.4s;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 60px;
+
+                @media screen and (max-width: $tablet) {
+                    flex-direction: column;
+                }
+
+                li a {
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+
+            @media screen and (max-width: $tablet) {
+                background-color: $clr-600;
+                position: fixed;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                inset: 0;
+                transform: translateX(100%);
+
+                button {
+                    background-color: $clr-200;
+                }
+
+                &.active {
+                    transform: translateX(0);
+                }
+            }
+        }
+        .hamburger-menu {
+            height: 48px;
+            display: none;
+
+            .line-1,
+            .line-2 {
+                width: 25px;
+                height: 5px;
+                border-radius: $border-radius;
+                background-color: $clr-600;
+            }
+
+            @media screen and (max-width: $tablet) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+
+                &.active {
+                    position: fixed;
+                    right: 50px;
+                    .line-1 {
+                        position: absolute;
+                        right: 4px;
+                        transform: rotate(45deg);
+                        background-color: white;
+                    }
+                    .line-2 {
+                        position: absolute;
+                        right: 4px;
+                        transform: rotate(-45deg);
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}

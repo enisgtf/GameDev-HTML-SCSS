@@ -1,0 +1,93 @@
+// containers
+.container {
+    margin: 0 auto;
+
+    @media only screen and (max-width: $mini-mobile) {
+        max-width: 350px;
+    }
+    @media only screen and (min-width: $mini-mobile) and (max-width: $mobile) {
+        max-width: 390px;
+    }
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        max-width: 470px;
+    }
+
+    @media only screen and (min-width: $tablet) and (max-width: $desktop){
+        max-width: 860px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+        max-width: 1200px;
+    }
+}
+
+// buttons
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-radius: $border-radius;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 14px 32px;
+
+    @media  screen and (max-width: $mobile) {
+        padding: 12px 32px; 
+        
+    }
+
+    &.light {
+        background-color: $clr-200;
+    }
+
+    &.dark {
+        background-color: $clr-500;
+    }
+    &.iconned {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 18px;
+        }
+    }
+}
+
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    line-height: 62.5px;
+
+    .dark {
+        color: $clr-500;
+    }
+
+    .light{
+        color: #ffffff;
+    }
+
+    @media only screen and (max-width: $mini-mobile) {
+        font-size: 32px;
+    }
+    @media only screen and (min-width: $mini-mobile) and (max-width: $mobile) {
+        font-size: 36px;
+    }
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        font-size: 50px;
+    }
+
+    @media only screen and (min-width: $tablet){
+        font-size: 60px;
+    }
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "game-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass --watch src/scss/index.scss style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

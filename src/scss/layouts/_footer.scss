@@ -1,0 +1,94 @@
+footer {
+    min-height: 410px;
+    background-color: $clr-600;
+    padding: 70px 0;
+    .container {
+        @media screen and (max-width: $mobile) {
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        @media screen and (max-width: $desktop) {
+           gap: 50px;
+        }
+        width: 100%;
+        display: flex;
+        gap: 132px;
+        flex-wrap: wrap;
+        .footer-list {
+            display: inline-block;
+            @media screen and (max-width: $mobile) {
+                text-align: center;
+            }
+            h5 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 36px;
+                color: $clr-200;
+            }
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    a {
+                        color: white;
+                        font-family: "Poppins";
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 32px;
+                    }
+                    form#subscribe {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 520px;
+                        height: 40px;
+                        background-color: white;
+                        border-radius: 8px;
+                        padding: 0 10px;
+
+                        @media screen and (max-width: $tablet) {
+                            max-width: 400px;
+                            width: 100%;
+                        }
+                        @media screen and (max-width: $mobile) {
+                            flex-direction: column;
+                            height: auto;
+                            background: none;
+                            padding: 0;
+                            input[type="email"] {
+                                padding: 4px 10px;
+                                border-radius: 8px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        @media screen and (max-width: $mini-mobile) {
+                        }
+
+                        input[type="email"] {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            opacity: 0.8;
+                            color: #000;
+                            width: 100%;
+                        }
+                        input[type="submit"] {
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            background-color: $clr-500;
+                            color: white;
+                            padding: 1px 25px;
+                            border-radius: 8px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        .developer-info{
+            text-align: center;
+        }
+    }
+}
